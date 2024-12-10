@@ -16,7 +16,7 @@ useEffect(() => {
                 },
                 credentials:'include'
             });
-            console.log("I am Triggered 2",response.status)
+            console.log("I am Triggered 2",response)
             let result = await response.json();
             console.log(result)
             if(response.status == 200) {

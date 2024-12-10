@@ -5,6 +5,7 @@ import { getSocket } from "./SocketConnection";
 export default function ChatList({getChatId,}) {
     let [chats, setChats] = useState([]);
     let navigate = useNavigate();
+    let url = "https://chat-connect-part-1.onrender.com";
 
     const users = localStorage.getItem('frontData');
     if(!users) {
@@ -20,7 +21,7 @@ export default function ChatList({getChatId,}) {
         }
         
         let fetchChatHistory = async () => {
-            const response = await fetch("http://localhost:8080/router/chats", {
+            const response = await fetch(`${url}/router/chats`, {
                 method : "POST",
                 headers : {
                     'Content-type' : "application/json",

@@ -25,7 +25,7 @@ export default function CreateGroup({userId,GroupCreated,CancleGroupCreated}) {
                 const nonAdminUsers = result.filter(user => user._id !== userId);
                 setUsers(nonAdminUsers);
             } else {
-                navigate("/",{state:{errorMessage:"SOmething went wrong"}})
+                navigate("/",{state:{errorMessage:"Something went wrong"}})
             }
         }
         fetchUsers();

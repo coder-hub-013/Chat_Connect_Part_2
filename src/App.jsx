@@ -8,8 +8,8 @@ import Chat from './pages/Chats/Chat';
 import SearchUser from './components/SearchUser';
 import ChatMessage from './pages/Chats/ChatMessage';
 import PrivateRoute from './components/PrivateRoute';
-import SomethingNew from './SomethingNew/SomethingNew';
-import VoiceRecorder from './VoiceRecorder';
+// import SomethingNew from './SomethingNew/SomethingNew';
+// import VoiceRecorder from './VoiceRecorder';
 // import { ChatProvider } from './components/ChatProvider';
 
 function App() {
@@ -35,12 +35,6 @@ function App() {
                   </Router>
                 {/* </ChatProvider> */}
           </div>
-
-          // // <SearchUser></SearchUser>
-
-          // <SomethingNew></SomethingNew>
-
-          // <VoiceRecorder></VoiceRecorder>
 
   )
 }
