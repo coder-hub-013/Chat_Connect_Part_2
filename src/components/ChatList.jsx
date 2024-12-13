@@ -32,7 +32,9 @@ export default function ChatList({getChatId,}) {
             const result = await response.json();
             // console.log(result);
             if(response.status == 200) {
-                setChats(result);
+                const sortedChats = [...result].sort((a,b) => new Date(b.updatedAt) - new Date(a.updatedAt));
+                console.log(sortedChats);
+                setChats(sortedChats);
             } else {
                 navigate('/',{state:{errorMessage:result.message}})
             }
@@ -42,8 +44,15 @@ export default function ChatList({getChatId,}) {
 
         if(socket) {
             socket.on('updateChatList',(receiverDetails) => {
-                setChats((prevChat) =>  [...prevChat,...receiverDetails]);
-            });
+                setChats((prevChats) => {
+                    const index = prevChats.findIndex((chat) => chat._id === receiverDetails._id);
+                    if(index !== -1) {
+                        prevChats[index] = {...prevChats[index], ...receiverDetails};
+                    } else {
+                        prevChats.push(receiverDetails);
+                    }
+                    return [...prevChats].sort((a,b) => new Date(b.updatedAt) - new Date(a.updatedAt));
+                })            });
             return () => {
                 socket.off('updateChatList');
             }
