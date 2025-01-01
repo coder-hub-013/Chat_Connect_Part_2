@@ -1,0 +1,41 @@
+.web-screen-layout-container {
+    display: flex;
+    height: 100vh;
+}
+
+.web-screen-layout-container-list {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    overflow-y: auto;
+    max-height: 100%;
+    scrollbar-width: none;
+}
+
+.web-screen-layout-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    scrollbar-width: none;
+}
+
+.web-screen-layout-message-webbar {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+}
+
+.web-screen-layout-container-list::-webkit-scrollbar {
+    display: none;
+}
+
+.web-screen-layout-messages::-webkit-scrollbar {
+    display: none;
+}
+
+.web-screen-layout-input-container {
+    margin-bottom: 5px;
+}

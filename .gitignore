@@ -1,0 +1,39 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+node_modules/
+<<<<<<< HEAD
+
+
+# something new
+
+SomethingNew/
+VoiceRecorder.jsx
+=======
+SomethingNew/
+VoiceRecorder.jsx
+
+# something new
+>>>>>>> 7de2426528dc1635cc105b808ea553ac8f4480dd

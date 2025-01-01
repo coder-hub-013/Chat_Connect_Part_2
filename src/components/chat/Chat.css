@@ -1,0 +1,20 @@
+.view-chat-btn {
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.view-chat-btn-unread {
+    background-color: lightgreen !important;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.view-chat-btn:hover {
+    background-color: #5c6bc0;
+}

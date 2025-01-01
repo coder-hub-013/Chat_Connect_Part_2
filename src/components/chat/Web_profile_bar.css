@@ -1,0 +1,19 @@
+.web-profile-bar-container {
+    padding: 10px;
+    border-right-color: rgba(37, 45, 50, 1);
+    background-color: rgba(42, 47, 50, 1);
+    color: white;
+}
+.web-profile-bar-photo {
+    display: flex;
+    justify-content: space-between;
+    /* border-radius: 20px; */
+}
+
+/* .web-profile-bar-photo  h3 {
+    border-radius: 20px;
+} */
+
+.web-profile-bar-icon {
+    display: flex;
+}

@@ -1,0 +1,89 @@
+body {
+    background-color: rgba(19, 28, 33, 1);
+}
+.contact-list {
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+}
+
+.contact-list-appbars {
+    display: flex;    
+    justify-content: space-between;
+    background-color: rgba(31, 44, 52, 1);
+    align-items: center;
+}
+
+.contact-list-appbars button {
+    margin-left: 10px;
+    background-color: white;
+    color: #3f51b5;
+    border: 1px solid #3f51b5;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.contact-list-appbars button:hover {
+    background-color: #5c6bc0;
+    color: white;
+}
+
+
+.contact-list-appbars p {
+    color: grey;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(31, 44, 52, 1);
+    height: 30px;
+}
+.contact-list-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    color: white;
+}
+.contact-list-container img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.contact-list-title {
+    flex-grow: 1;
+    overflow: hidden;
+}
+.contact-list-leading {
+    font-size: 18px;
+    font-weight: bold;
+}
+.contact-list-messages {
+    font-size: 15px;
+    color: #ccc;
+    margin-top: 5px;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.contact-list-container button {
+    margin-left: auto;
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-list-container button:hover {
+    background-color: #0056b3;
+}
+.contact-list-time {
+    font-size: 13px;
+    color: grey;
+    margin-left: 10px;
+    white-space: nowrap;
+}

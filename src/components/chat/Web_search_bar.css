@@ -1,0 +1,9 @@
+.web-search-bar {
+    padding: 10px;
+}
+
+.web-search-bar input {
+    background-color: rgba(50, 55, 57, 1);
+    border-radius: 20px;
+    border: none;
+}

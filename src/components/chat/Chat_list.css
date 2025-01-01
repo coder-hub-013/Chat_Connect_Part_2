@@ -1,0 +1,184 @@
+.chat-list {
+    background-color: rgba(19, 28, 33, 1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-list-appBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    color: white;
+    background-color: rgba(31, 44, 52, 1);
+    flex-shrink: 0;
+}
+
+.chat-list-leftIcons {
+    display: flex;
+    align-items: center;
+}
+
+.iconButton {
+    background: none;
+    /* border: none; */
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+
+}
+
+.chat-list-title {
+    flex: 1;
+    text-align: center;
+}
+
+.titleText {
+    font-weight: bold;
+    font-size: 20px;
+    color: #34B7F1;
+}
+
+.chat-list-rightIcons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.chat-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    margin-bottom: 50px;
+}
+
+.chat-list-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+}
+
+.chat-list-card.sent {
+    align-self: flex-end;
+    background-color: rgba(5, 96, 98, 1);  
+    color: white;
+    border-radius: 15px 15px 0 15px;
+    padding: 10px;
+}
+
+.chat-list-card.received {
+    align-self: flex-start;
+    background-color: rgba(31, 44, 52, 1);
+    border-radius: 15px 15px 15px 0;
+    padding: 10px;
+}
+
+.chat-list-messageText {
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.chat-list-dateRow {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+}
+
+.chat-list-dateText {
+    font-size: 12px;
+    color: #666;
+}
+
+.chat-list-icon {
+    font-size: 12px;
+    color: #34B7F1;
+}
+
+.chat-list-deleted-icon {
+    font-size: 12px;
+    color: black;
+}
+
+
+.chat-list-textInput {
+    display: flex;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    gap: 10px;
+    background-color: rgba(19, 28, 33, 1);
+}
+
+.chat-list-textInput input {
+    width: calc(100% - 100px);
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    background-color: rgba(31, 44, 52, 1);
+    color: white;
+}
+.chat-list-textInput button {
+    border: none;
+    background-color: blue;
+    opacity: 0.6;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.chat-list-textInput button:hover {
+    opacity: 1;
+}
+.web {
+    display: flex;
+    padding: 10px;
+    position: fixed;
+    width: 75%;
+    bottom: 0;
+    gap: 10px;
+    background-color: rgba(19, 28, 33, 1);
+}
+
+.web input {
+    width: calc(100% - 170px); 
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    background-color: rgba(31, 44, 52, 1);
+    color: white;
+}
+
+.web button {
+    border: none;
+    background-color: blue;
+    opacity: 0.6;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.web:hover {
+    opacity: 1;
+}
+
+.participant-name {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #007bff;
+    padding: 5px;
+    border-radius: 5px;
+}
