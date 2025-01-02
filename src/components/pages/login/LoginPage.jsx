@@ -74,7 +74,7 @@ export default function LoginPage() {
                     <button className="btn btn-primary">Submmit</button>
                 </form>
                 <p>Don't have an account? <Link className="link" to={"/signup"}>Sign Up</Link></p>
-                <p>Forgot Password? <Link className="link" to={"/signup"}>Forgot Password</Link></p>
+{/*                 <p>Forgot Password? <Link className="link" to={"/signup"}>Forgot Password</Link></p> */}
 
             </div>
         </div>
