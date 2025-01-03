@@ -12,6 +12,7 @@ export default function LoginPage() {
     // let url = "http://localhost:8080";
 
     let [data,setData] = useState({email:"",password:""});
+    let [loading,setLoading] = useState(false)
     let handleInput = (e) => {
         setData((curr) => {
             return{
@@ -22,6 +23,8 @@ export default function LoginPage() {
 
     let handleForm = async (e) => {
         e.preventDefault();
+        setData({email:'',password:''})
+        setLoading(true)
         try {
             let response = await fetch(`${url}/router/login`,{
                 method : "POST",
@@ -40,6 +43,7 @@ export default function LoginPage() {
                 let parseData = JSON.parse(users)
                 const socket = initializeSocket();
                 socket.emit("addNewUser",parseData.user.id)
+                setLoading(false)
                 navigate('/chat',{state:{loginMessage : result.message}})
             }else {
                 throw new Error(result.message);
@@ -71,7 +75,7 @@ export default function LoginPage() {
                         <label htmlFor="password">Password:</label>
                         <input required onChange={handleInput} value={data.password} name="password" placeholder="Enter the password" id="password"></input><br></br>
                     </div>
-                    <button className="btn btn-primary">Submmit</button>
+                    <button className="btn btn-primary">{loading?'loading':submit}</button>
                 </form>
                 <p>Don't have an account? <Link className="link" to={"/signup"}>Sign Up</Link></p>
 {/*                 <p>Forgot Password? <Link className="link" to={"/signup"}>Forgot Password</Link></p> */}
