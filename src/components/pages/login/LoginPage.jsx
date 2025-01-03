@@ -75,7 +75,7 @@ export default function LoginPage() {
                         <label htmlFor="password">Password:</label>
                         <input required onChange={handleInput} value={data.password} name="password" placeholder="Enter the password" id="password"></input><br></br>
                     </div>
-                    <button className="btn btn-primary">{loading?'loading':submit}</button>
+                    <button className="btn btn-primary" disabled={loading}>{loading?'loading':submit}</button>
                 </form>
                 <p>Don't have an account? <Link className="link" to={"/signup"}>Sign Up</Link></p>
 {/*                 <p>Forgot Password? <Link className="link" to={"/signup"}>Forgot Password</Link></p> */}
