@@ -46,6 +46,7 @@ export default function LoginPage() {
                 setLoading(false)
                 navigate('/chat',{state:{loginMessage : result.message}})
             }else {
+                setLoading(false)
                 throw new Error(result.message);
             }
 
