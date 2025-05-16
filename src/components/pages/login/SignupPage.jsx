@@ -80,7 +80,7 @@ export default function SignupPage() {
                 </div>
                 <div className="form-group">
                     <label htmlFor="password">Password:</label>
-                    <input required onChange={handleInput} value={data.password} name="password" placeholder="Enter the password" id="password"></input><br></br>
+                    <input type="password" required onChange={handleInput} value={data.password} name="password" placeholder="Enter the password" id="password"></input><br></br>
                 </div>
                 <button className="btn btn-primary">Submmit</button>
             </form>
