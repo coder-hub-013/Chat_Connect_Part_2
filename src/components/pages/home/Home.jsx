@@ -96,7 +96,7 @@ export default function Home() {
         <NotificationContainer></NotificationContainer>
           <h1>Welcome to ChatApp</h1>
           <p>Connect and chat with friends and colleagues easily.</p>
-            <p>Please note use in Incognito Mode</p>
+            <p>⚠️ Warning: Some features may not work in Incognito Mode.</p>
           <div className="buttons">
             <Link className="btn btn-primary"  to={"/chat"}>Let's Start the chat</Link>
 
